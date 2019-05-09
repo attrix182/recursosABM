@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1557413792 source:d:\luciano sinisterra\parciallab1\funcionesget.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
+1557415190 source:d:\luciano sinisterra\parciallab1\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1557413602 d:\luciano sinisterra\parciallab1\menu.h
+
+1557421251 source:d:\luciano sinisterra\parciallab1\actoresfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"actoresFunciones.h"
+
+1557421214 source:d:\luciano sinisterra\parciallab1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"actoresFunciones.h"
+	"peliculasFunciones.h"
+	"menu.h"
+	"funcionesGet.h"
+
+1557421500 source:d:\luciano sinisterra\parciallab1\peliculasfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"peliculasFunciones.h"
+	"actoresFunciones.h"
+
+1557416007 d:\luciano sinisterra\parciallab1\actoresfunciones.h
+
+1557421160 d:\luciano sinisterra\parciallab1\peliculasfunciones.h
+	"actoresFunciones.h"
+
+1557418552 d:\luciano sinisterra\parciallab1\funcionesget.h
+
