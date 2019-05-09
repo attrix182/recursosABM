@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1557364722 source:e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bibliotecaEstructura.h"
+	"eAutoFunciones.h"
+	"menu.h"
+	"funcionesGet.h"
+
+1557359948 e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\bibliotecaestructura.h
+
+1557359920 source:e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\bibliotecaestructura.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"bibliotecaEstructura.h"
+
+1557357940 source:e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1557353707 e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\menu.h
+
+1557365847 source:e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\funcionesget.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funcionesGet.h"
+
+1557365551 e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\funcionesget.h
+	"bibliotecaEstructura.h"
+	"eAutoFunciones.h"
+
+1557362465 e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\eautofunciones.h
+	"bibliotecaEstructura.h"
+
+1557362465 source:e:\usuarios\escritorio\utn1cuatri\practicas\abmconcesionario\eautofunciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"eAutoFunciones.h"
+
