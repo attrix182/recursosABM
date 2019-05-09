@@ -12,14 +12,14 @@
 
 1557413602 d:\luciano sinisterra\parciallab1\menu.h
 
-1557421251 source:d:\luciano sinisterra\parciallab1\actoresfunciones.c
+1557422166 source:d:\luciano sinisterra\parciallab1\actoresfunciones.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	"actoresFunciones.h"
 
-1557421214 source:d:\luciano sinisterra\parciallab1\main.c
+1557421874 source:d:\luciano sinisterra\parciallab1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"actoresFunciones.h"

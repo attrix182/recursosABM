@@ -97,7 +97,7 @@ int buscarLibreActors(eActor listado[], int len)
     {
         if(listado[i].estado ==1)
         {
-            id = i+1;
+            id = i+1000;
             break;
         }
     }

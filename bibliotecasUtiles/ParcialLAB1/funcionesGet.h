@@ -41,6 +41,7 @@ void getString(char mensaje[], char input[]);
 
 
 
+
 /** \brief Verifica si el valor recibido contiene solamente numeros, + y -.
  *
  * \param str Array con la cadena que va a ser analizada.
