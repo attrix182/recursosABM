@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "menu.h"
+#include "funcionesGet.h"
 int pedirOpcionMenu()
 {
     int opcion;
     printf("            A B M                  \n\n");
-    printf(" 1. ALTAS  \n 2. LISTAR \n 3. Salir\n");
+    printf(" 1. ALTAS  \n 2. LISTAR \n 3. MODIFICAR PELICULA\n 4. Salir\n");
     scanf("%d", &opcion);
 
     return opcion;
 
 }
-int getOptionModify()
+int pedirOpcionModificacionPelicula()
 {
-    int optionModify;
+    int opcionAmodificar;
     printf("%s","             MODIFICACION            \n");
-    printf("%10s - %10s - %10s - %10s \n", "1.NAME", "2.LAST NAME","3.SALARY","4.SECTOR");
-    scanf("%d", &optionModify);
+    printf("%10s - %10s - %10s \n", "1.Titulo", "2.Anio de estreno", "3.Actor");
+    opcionAmodificar = getInt("Que desea modificar?");
 
-    return optionModify;
+    return opcionAmodificar;
 }
 
 int getOptionShow()

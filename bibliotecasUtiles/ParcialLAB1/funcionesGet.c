@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>
+#include "actoresFunciones.h"
+#include "peliculasFunciones.h"
 
 
-
-int getInt (char mensaje[])
+int getInt(char mensaje[])
 {
     char auxiliarChar[10];
     int enteroADevolver;
@@ -17,41 +18,44 @@ int getInt (char mensaje[])
 
     while(enteroADevolver == 0)
     {
-        printf("%s", "Valor invalido. Ingrese un numero ");
+        printf("%s", "Valor invalido. Ingrese un numero \n");
         scanf("%s", auxiliarChar);
         fflush(stdin);
         enteroADevolver = atoi(auxiliarChar);
     }
 
-
     return enteroADevolver;
 
 }
 
-
-char getChar (char mensaje[])
-{
-    char auxiliarChar;
-    printf("%s", mensaje);
-    fflush(stdin);
-    scanf("%s", &auxiliarChar);
-    return auxiliarChar;
-}
-
-
 float getFloat(char mensaje[])
 {
-    float auxiliarFloat;
+    char auxiliarChar[10];
+    float floatADevolver;
+
     printf("%s", mensaje);
-    scanf("%f", &auxiliarFloat);
-    return auxiliarFloat;
+    scanf("%s", auxiliarChar);
+    fflush(stdin);
+    floatADevolver = atof(auxiliarChar);
+
+    while(floatADevolver == 0)
+    {
+        printf("%s", "Valor invalido. Ingrese un numero \n");
+        scanf("%s", auxiliarChar);
+        fflush(stdin);
+        floatADevolver = atof(auxiliarChar);
+    }
+
+
+    return floatADevolver;
+
 }
 
 
 void getString(char mensaje[], char input[])
 {
     printf(mensaje);
-    scanf("%s", mensaje);
+    fflush(stdin);
     gets(input);
 }
 

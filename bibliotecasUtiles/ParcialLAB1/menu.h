@@ -14,7 +14,12 @@ int pedirOpcionMenu();
  * \return int
  *
  */
-int getOptionModify();
+int pedirOpcionModificacionPelicula();
 
+/** \brief
+ *
+ * \return int
+ *
+ */
 int getOptionShow();
 #endif // MENU_H_INCLUDED

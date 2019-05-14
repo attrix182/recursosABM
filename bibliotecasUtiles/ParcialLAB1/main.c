@@ -19,11 +19,12 @@ int main()
     harcodePeliculas(listadoPeliculas, TAM);
 
     int opcion;
+    int opcionMod;
     char seguir = 's';
     int id;
     int codigoPelicula;
     char titulo[51];
-    char fechaDeEstreno[20];
+    int fechaDeEstreno;
     char genero[21];
     int idActor;
     int idExiste;
@@ -36,19 +37,11 @@ int main()
         {
         case 1:
             id = buscarLibrePelicula(listadoPeliculas, TAM);
-
             codigoPelicula = getInt("Ingrese codigo pelicula");
 
-            printf(" Ingrese titulo \n");
-            scanf("%s", titulo);
-            fflush(stdin);
-            printf("Ingrese Fecha de estreno \n");
-            scanf("%s", fechaDeEstreno);
-            fflush(stdin);
-            printf("Ingrese genero \n");
-            scanf("%s", genero);
-            fflush(stdin);
-
+            getString(" Ingrese titulo \n", titulo);
+            fechaDeEstreno = getInt("Ingrese Fecha de estreno \n");
+            getString(" Ingrese genero \n", genero);
             idActor = getInt("id de actor principal");
             idExiste = buscarActorPorID(listadoActores, ATAM, idActor);
             while(idExiste == -1)
@@ -68,12 +61,25 @@ int main()
             mostrarPeliculasConActores(listadoPeliculas, listadoActores, TAM);
             break;
         case 3:
+
+            id = getInt("Ingrese ID de Pelicula a modificar \n");
+            idExiste = buscarPeliPorID(listadoPeliculas, TAM, id);
+            while(idExiste == -1)
+            {
+                id = getInt("Reingrese una ID valida\n");
+                idExiste = buscarPeliPorID(listadoPeliculas, TAM, id);
+
+            }
+            opcionMod = pedirOpcionModificacionPelicula();
+            modificacionPelicula(listadoPeliculas, listadoActores, TAM, id, titulo, idActor, fechaDeEstreno, opcionMod);
+            break;
+        case 4:
             seguir = 'n';
             break;
 
         default:
-        printf("opcion invlaida \n");
-        break;
+            printf("opcion invlaida \n");
+            break;
         }
         system("pause");
         system("cls");

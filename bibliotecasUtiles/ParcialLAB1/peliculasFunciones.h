@@ -7,7 +7,7 @@ typedef struct
     int id;
     int codigoPelicula;
     char titulo[51];
-    char fechaDeEstreno[20];
+    int fechaDeEstreno;
     char genero[21];
     int estado;
     int idActor;
@@ -35,7 +35,7 @@ int inicializarPeliculas(ePelicula[], int len);
  * \return int Return (-1) if Error [Invalid length or NULL pointer or without
 free space] - (0) if Ok
  **/
-int altaPeliculas(ePelicula[], int len, int id, int codigoPelicula, char titulo[],char fechaDeEstreno[], char genero[], int idActor);
+int altaPeliculas(ePelicula[], int len, int id, int codigoPelicula, char titulo[],int fechaDeEstreno, char genero[], int idActor);
 
 /** \brief print the content of employees array
  *
@@ -101,6 +101,16 @@ int buscarLibrePelicula(ePelicula[], int len);
  */
 int mostrarPeliculasConActores(ePelicula[], eActor[], int len);
 
+/** \brief modify a existing list of employees the values received as parameters in the first empty position
+ * \param list employee*
+ * \param len int
+ * \param id int
+ * \param name[] char
+ * \param lastName[] char
+ * \return int Return (-1) if Error [Invalid length or NULL pointer or without
+free space] - (0) if Ok
+ **/
+int modificacionPelicula(ePelicula[], eActor listado[], int len, int id, char titulo[],int idActor, int fechaDeEstreno, int option);
 
 
 

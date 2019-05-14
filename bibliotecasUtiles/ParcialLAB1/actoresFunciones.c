@@ -72,8 +72,8 @@ int harcodeActores(eActor listado[], int len)
     int i;
 
     int id[5]= {1, 2, 3, 4, 5};
-    char nombreActor[5][50]= {"Julieta roberto", "Roberto deniro", "Richar darin", "Tita merelo", "Sandro"};
-    char nacionalidad[5][13]= {"EEUU", "EEUU", "Argentina", "Argentina", "Argentina"};
+    char nombreActor[5][50]= {"Julieta roberto", "Richar darin", " Nicole Kidman", "Tita merello", "Natalia Oreiro"};
+    char nacionalidad[5][13]= {"EEUU", "Argentina ", "Australiana ", "Argentina", "Uruguay"};
     int estado[5]= { 0, 0, 0, 0};
 
     for(i=0; i<4; i++)
